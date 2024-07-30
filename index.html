@@ -1,0 +1,103 @@
+><!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>my1stWeatherApp</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- search box of the interface location -->
+        <div class="searchContainer">
+
+            <input id="search" type="search">
+
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+        </div>
+
+        <div class="currentForcast">
+
+            <div class="currentForcastInfo">
+
+                <img id="curentIcon" src="113.webp">
+
+                <div>
+
+                    <span id="dayTemperature">°C</span>
+
+                </div>
+                
+                <div>
+
+                    <span id="currentTemperatureUnit"></span>
+
+                </div>
+                
+                <div class="currentConditions">
+
+                    <div>Precipitation :
+
+                        <span id="precipitation"></span>
+
+                    </div>
+                    
+                    <div>Humidity :
+
+                        <span id="humidity"></span>
+
+                    </div>
+                    
+                    <div>Wind :
+
+                        <span id="wind"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="currentForcastDate">
+
+                    <div id="cityName">Weather</div>
+
+                    <div id="today">Weekday</div>
+
+                    <div id="condition">Condition</div>
+
+                </div>
+
+            </div>
+
+            <!-- Section to showcase the weather forecast for the upcoming seven days. We include a div as example into the section as a template the forcast for each days -->
+            <div class="dailyForcastConainer">
+
+                <div class="dailyForcast"></div><div class="weekday"></div>
+
+                <div><img id="currentIcon" src="113.webp" /></div>
+
+                <div class="maxMinTemp">
+
+                    <span class="temp">25</span>
+                    <span class="temp">30</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="alert"></div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
